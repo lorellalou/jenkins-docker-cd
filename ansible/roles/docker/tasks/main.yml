@@ -1,3 +1,7 @@
+- name: apt-get update
+  shell: apt-get update
+  tags: [docker]
+
 - name: Docker is present
   apt: name=docker.io state=present
   tags: [docker]
